@@ -1,0 +1,36 @@
+<script>
+    class parent {
+        
+        constructor() {
+            
+            console.log("constructor always load quickly");
+
+        }
+        parent_function() {
+            document.write(" I have  a Ford,");
+
+        }
+
+
+    }
+    class child extends parent {
+        
+        child_function() {
+            document.write("it is a Mustang");
+
+
+        }
+
+    
+
+
+        statement1 = this.parent_function();
+        statement2 = this.child_function();
+
+
+    }
+    let printstatements = new child;
+    console.log(printstatements.statement1 +   printstatements.statement2);
+
+
+</script>
